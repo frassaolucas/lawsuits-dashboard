@@ -1,0 +1,33 @@
+// COLORS
+$color-primary: #0063B1;
+$color-primary-light: lighten(#0063B1, 10%);
+$color-primary-dark: darken(#0063B1, 10%);
+
+$color-grey-light-1: #F9F9F9;
+$color-grey-light-2: #F4F4F4;
+$color-grey-light-3: #E7E7E7;
+
+$color-grey-dark-1: #EAEAEA;
+$color-grey-dark-2: #D8D8D8;
+$color-grey-dark-3: #808080;
+$color-grey-dark-4: #4D4D4D;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-positive: #01AE76;
+$color-negative: #FF5766;
+
+
+// FONT
+$font-regular: 'Segoe UI Regular';
+$font-semibold: 'Segoe UI Semibold';
+
+$font-size-default: 1.4rem;
+
+// BREAKPOINTS
+$bp-xxl: 100em; // 1600px
+$bp-xl: 74.93em; // 1199px
+$bp-lg: 61.93em; // 991px
+$bp-md: 48em; // 768px
+$bp-sm: 30em; // 480px

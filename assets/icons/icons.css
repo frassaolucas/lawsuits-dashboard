@@ -1,0 +1,397 @@
+@font-face {
+  font-family: 'iconsplan';
+  src:  url('fonts/icomoon.eot?hnaf1q');
+  src:  url('fonts/icomoon.eot?hnaf1q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hnaf1q') format('truetype'),
+    url('fonts/icomoon.woff?hnaf1q') format('woff'),
+    url('fonts/icomoon.svg?hnaf1q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconsplan' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-AngleDoubleDown:before {
+  content: "\e900";
+}
+.icon-AngleDoubleLeft:before {
+  content: "\e901";
+}
+.icon-AngleDoubleRight:before {
+  content: "\e902";
+}
+.icon-AngleDoubleUp:before {
+  content: "\e903";
+}
+.icon-AngleDown:before {
+  content: "\e904";
+}
+.icon-AngleLeft:before {
+  content: "\e905";
+}
+.icon-AngleRight:before {
+  content: "\e906";
+}
+.icon-AngleUp:before {
+  content: "\e907";
+}
+.icon-Answer:before {
+  content: "\e908";
+}
+.icon-ArchiveFiles:before {
+  content: "\e909";
+}
+.icon-ArrowDown:before {
+  content: "\e90a";
+}
+.icon-ArrowLeft:before {
+  content: "\e90b";
+}
+.icon-ArrowLongRight:before {
+  content: "\e90c";
+}
+.icon-ArrowRight:before {
+  content: "\e90d";
+}
+.icon-ArrowToBottom:before {
+  content: "\e90e";
+}
+.icon-ArrowUp:before {
+  content: "\e90f";
+}
+.icon-Back:before {
+  content: "\e910";
+}
+.icon-Bars:before {
+  content: "\e911";
+}
+.icon-Bookmarks:before {
+  content: "\e912";
+}
+.icon-BookOpen:before {
+  content: "\e913";
+}
+.icon-CalendarEdit:before {
+  content: "\e914";
+}
+.icon-CalendarMonth:before {
+  content: "\e915";
+}
+.icon-Camera:before {
+  content: "\e916";
+}
+.icon-CardGroup:before {
+  content: "\e917";
+}
+.icon-Check:before {
+  content: "\e918";
+}
+.icon-CheckCircle:before {
+  content: "\e919";
+}
+.icon-Clock:before {
+  content: "\e91a";
+}
+.icon-Close:before {
+  content: "\e91b";
+}
+.icon-Cloud:before {
+  content: "\e91c";
+}
+.icon-Comment:before {
+  content: "\e91d";
+}
+.icon-CommentAlt:before {
+  content: "\e91e";
+}
+.icon-CommentBlock:before {
+  content: "\e91f";
+}
+.icon-Compact:before {
+  content: "\e920";
+}
+.icon-Compress:before {
+  content: "\e921";
+}
+.icon-Crosshair:before {
+  content: "\e922";
+}
+.icon-Cursor:before {
+  content: "\e923";
+}
+.icon-Designate:before {
+  content: "\e924";
+}
+.icon-EllipsisH:before {
+  content: "\e925";
+}
+.icon-Envelope:before {
+  content: "\e926";
+}
+.icon-Exchange:before {
+  content: "\e927";
+}
+.icon-ExclamationCircle:before {
+  content: "\e928";
+}
+.icon-Expand:before {
+  content: "\e929";
+}
+.icon-EyeSlash:before {
+  content: "\e92a";
+}
+.icon-Fail .path1:before {
+  content: "\e92b";
+  color: rgb(255, 255, 255);
+}
+.icon-Fail .path2:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-FileAll:before {
+  content: "\e92d";
+  color: #d8d8d8;
+}
+.icon-FileAlt:before {
+  content: "\e92e";
+}
+.icon-FileBlock:before {
+  content: "\e92f";
+}
+.icon-FileCertificate:before {
+  content: "\e930";
+}
+.icon-FileComplaint .path1:before {
+  content: "\e931";
+  color: rgb(216, 216, 216);
+}
+.icon-FileComplaint .path2:before {
+  content: "\e932";
+  margin-left: -0.9189453125em;
+  color: rgb(1, 174, 118);
+}
+.icon-FileDenial .path1:before {
+  content: "\e933";
+  color: rgb(255, 87, 102);
+}
+.icon-FileDenial .path2:before {
+  content: "\e934";
+  margin-left: -0.9189453125em;
+  color: rgb(216, 216, 216);
+}
+.icon-FileEdit:before {
+  content: "\e935";
+}
+.icon-FileLine:before {
+  content: "\e936";
+}
+.icon-FileOrder .path1:before {
+  content: "\e937";
+  color: rgb(255, 193, 111);
+}
+.icon-FileOrder .path2:before {
+  content: "\e938";
+  margin-left: -0.9189453125em;
+  color: rgb(216, 216, 216);
+}
+.icon-FilePage:before {
+  content: "\e939";
+}
+.icon-FileSearch:before {
+  content: "\e93a";
+}
+.icon-FileSend:before {
+  content: "\e93b";
+}
+.icon-FileShare:before {
+  content: "\e93c";
+}
+.icon-FilesSearch:before {
+  content: "\e93d";
+}
+.icon-FileSync:before {
+  content: "\e93e";
+}
+.icon-FileText:before {
+  content: "\e93f";
+}
+.icon-FileTimer:before {
+  content: "\e940";
+}
+.icon-FileUndo:before {
+  content: "\e941";
+}
+.icon-Filter:before {
+  content: "\e942";
+}
+.icon-Folder:before {
+  content: "\e943";
+}
+.icon-Gavel:before {
+  content: "\e944";
+}
+.icon-Hand:before {
+  content: "\e945";
+}
+.icon-HelpCircle:before {
+  content: "\e946";
+}
+.icon-InfoCircle:before {
+  content: "\e947";
+}
+.icon-Lock:before {
+  content: "\e948";
+}
+.icon-MinusCircle:before {
+  content: "\e949";
+}
+.icon-Money:before {
+  content: "\e94a";
+}
+.icon-Mute:before {
+  content: "\e94b";
+}
+.icon-Negative:before {
+  content: "\e94c";
+}
+.icon-NewDocument:before {
+  content: "\e94d";
+}
+.icon-OpenMessage:before {
+  content: "\e94e";
+}
+.icon-Paperclip:before {
+  content: "\e94f";
+}
+.icon-Password:before {
+  content: "\e950";
+}
+.icon-Pencil:before {
+  content: "\e951";
+}
+.icon-Pendrive:before {
+  content: "\e952";
+}
+.icon-Play:before {
+  content: "\e953";
+}
+.icon-PlusCircle:before {
+  content: "\e954";
+}
+.icon-Positive:before {
+  content: "\e955";
+}
+.icon-Redo:before {
+  content: "\e956";
+}
+.icon-RotateLeft:before {
+  content: "\e957";
+}
+.icon-RotateRight:before {
+  content: "\e958";
+}
+.icon-Search:before {
+  content: "\e959";
+}
+.icon-Share:before {
+  content: "\e95a";
+}
+.icon-Sitemap:before {
+  content: "\e95b";
+}
+.icon-SitemapH:before {
+  content: "\e95c";
+}
+.icon-Slider:before {
+  content: "\e95d";
+}
+.icon-Star:before {
+  content: "\e95e";
+}
+.icon-StarBlok:before {
+  content: "\e95f";
+}
+.icon-Success .path1:before {
+  content: "\e960";
+  color: rgb(255, 255, 255);
+}
+.icon-Success .path2:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Sync:before {
+  content: "\e962";
+}
+.icon-Tag:before {
+  content: "\e963";
+}
+.icon-TagAdd:before {
+  content: "\e964";
+}
+.icon-TaskList:before {
+  content: "\e965";
+}
+.icon-TimeExclamation .path1:before {
+  content: "\e966";
+  color: rgb(0, 0, 0);
+}
+.icon-TimeExclamation .path2:before {
+  content: "\e967";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-TimeExclamation .path3:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-TimeExclamation .path4:before {
+  content: "\e969";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-TimeExclamation .path5:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Timer:before {
+  content: "\e96b";
+}
+.icon-TimesCircle:before {
+  content: "\e96c";
+}
+.icon-TimeSearch:before {
+  content: "\e96d";
+}
+.icon-Trash:before {
+  content: "\e96e";
+}
+.icon-User:before {
+  content: "\e96f";
+}
+.icon-Video:before {
+  content: "\e970";
+}
+.icon-Volume:before {
+  content: "\e971";
+}
+.icon-WindowRestore:before {
+  content: "\e972";
+}

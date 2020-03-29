@@ -1,0 +1,8 @@
+.card {
+    padding: 2.5rem;
+    background-color: $color-white;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}

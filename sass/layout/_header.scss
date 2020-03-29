@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 3.1rem .8rem 1.7rem;
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    &__logo {
+        &:link {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+
+    &__user {
+        width: 3.2rem;
+        height: 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        color: $color-primary;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

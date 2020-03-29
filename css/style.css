@@ -1,0 +1,265 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html,
+body {
+  height: 100%;
+  font-size: 1.4rem; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: Segoe UI Regular;
+  src: url(/assets/Fonts/segoeuil_1.ttf); }
+
+@font-face {
+  font-family: Segoe UI Semibold;
+  src: url(/assets/Fonts/segoeui.ttf); }
+
+body {
+  font-family: "Segoe UI Semibold";
+  line-height: 1.7;
+  color: #808080; }
+
+.card {
+  padding: 2.5rem;
+  background-color: #fff; }
+  .card:not(:last-child) {
+    margin-bottom: 1rem; }
+
+.input-form {
+  position: relative; }
+  .input-form input {
+    width: 100%;
+    padding: 1.6rem 3rem 1.6rem 5rem;
+    border: 0;
+    color: #808080;
+    font-family: "Segoe UI Regular";
+    font-size: 1.35rem; }
+    .input-form input:focus, .input-form input:active {
+      outline: none; }
+  .input-form .search-button {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .input-form .search-button::before {
+      content: "\e959";
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'iconsplan' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: .8rem 3.1rem .8rem 1.7rem;
+  background-color: #0063B1;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500; }
+  .header__logo:link {
+    color: #fff;
+    text-decoration: none; }
+  .header__user {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #0063B1;
+    border-radius: 50%;
+    cursor: pointer; }
+
+.dashboard {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .dashboard .container {
+    display: grid;
+    grid-template-columns: 22rem 1fr;
+    flex: 1; }
+    @media only screen and (max-width: 48em) {
+      .dashboard .container {
+        grid-template-columns: 1fr; } }
+  .dashboard .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content) 1fr max-content;
+    background-color: #F4F4F4; }
+    .dashboard .sidebar--selected-option {
+      background-color: #EAEAEA;
+      border-left: 3px solid #0063B1; }
+    .dashboard .sidebar__title {
+      padding: 1.5rem;
+      font-size: 1.2rem; }
+    .dashboard .sidebar__all-results {
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      align-items: center;
+      grid-gap: 1rem;
+      padding: 1.5rem; }
+    .dashboard .sidebar .all-process__number {
+      font-size: 1.2rem; }
+    .dashboard .sidebar .tag-filter__title {
+      padding: 2.5rem 1.5rem; }
+    .dashboard .sidebar .tag-filter__item, .dashboard .sidebar .tag-filter__new-item {
+      display: grid;
+      grid-template-columns: 1.5rem 1fr max-content;
+      grid-gap: .5rem;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      line-height: 1.9rem; }
+    .dashboard .sidebar .tag-filter__item {
+      transition: .6s; }
+      .dashboard .sidebar .tag-filter__item--not-selected {
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #EAEAEA 50%);
+        background-size: 220%;
+        font-family: "Segoe UI Regular";
+        cursor: pointer; }
+        .dashboard .sidebar .tag-filter__item--not-selected:hover {
+          background-position: 100%; }
+      .dashboard .sidebar .tag-filter__item--selected {
+        background-color: #EAEAEA; }
+    .dashboard .sidebar .tag-filter__new-item {
+      font-family: "Segoe UI Regular";
+      cursor: pointer; }
+    .dashboard .sidebar .tag-filter__rectangle {
+      height: .5rem; }
+    .dashboard .sidebar__done {
+      padding: 1rem 2rem;
+      border-top: 1px solid #D8D8D8; }
+  .dashboard .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr; }
+    .dashboard .main-content .card-list {
+      padding: 2rem 3rem;
+      background-color: #EAEAEA; }
+    .dashboard .main-content .card {
+      display: grid;
+      grid-template-columns: 1.5fr max-content 1fr;
+      grid-gap: 3rem;
+      align-items: center; }
+      @media only screen and (max-width: 61.93em) {
+        .dashboard .main-content .card__general-information {
+          grid-column: 1 / -1; } }
+      .dashboard .main-content .card__open-folder {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6rem;
+        border-left: 1px solid #E7E7E7;
+        border-right: 1px solid #E7E7E7;
+        cursor: pointer;
+        transition: .4s; }
+        .dashboard .main-content .card__open-folder:hover {
+          background-color: #EAEAEA; }
+        @media only screen and (max-width: 74.93em) {
+          .dashboard .main-content .card__open-folder {
+            padding: 0 4rem; } }
+      .dashboard .main-content .card__tags {
+        display: flex;
+        align-items: center; }
+      .dashboard .main-content .card__icon-wrapper {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem; }
+      .dashboard .main-content .card__tag-wrapper {
+        display: flex;
+        flex-wrap: wrap; }
+      .dashboard .main-content .card__tag {
+        max-width: 6rem;
+        width: 100%;
+        margin: .2rem;
+        padding: .2rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      @media only screen and (max-width: 61.93em) {
+        .dashboard .main-content .card {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media only screen and (max-width: 48em) {
+        .dashboard .main-content .card {
+          grid-template-columns: 1fr; } }
+    .dashboard .main-content .process-status {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      grid-gap: 1rem;
+      font-family: "Segoe UI Regular";
+      font-size: 1.2rem; }
+      .dashboard .main-content .process-status__positive {
+        display: flex;
+        align-items: center; }
+        .dashboard .main-content .process-status__positive [class*="icon-"] {
+          margin-right: .3rem;
+          color: #01AE76; }
+        .dashboard .main-content .process-status__positive span:last-child {
+          font-family: "Segoe UI Semibold"; }
+      .dashboard .main-content .process-status__negative [class*="icon-"] {
+        color: #FF5766; }
+    .dashboard .main-content .process-type__category {
+      font-family: "Segoe UI Regular"; }
+    .dashboard .main-content .process-lower-info {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      grid-gap: 1rem;
+      align-items: center; }
+      .dashboard .main-content .process-lower-info__process-number {
+        font-size: 1.2rem; }
+      .dashboard .main-content .process-lower-info__process-stripe-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: .5rem; }
+      .dashboard .main-content .process-lower-info__process-stripe {
+        padding: .1rem .5rem;
+        font-size: 1.2rem;
+        border-radius: 1rem; }
+      @media only screen and (max-width: 30em) {
+        .dashboard .main-content .process-lower-info {
+          grid-template-columns: 1fr; } }

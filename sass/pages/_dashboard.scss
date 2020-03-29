@@ -1,0 +1,242 @@
+.dashboard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .container {
+        display: grid;
+        grid-template-columns: 22rem 1fr;
+        flex: 1;
+
+        @include respond(md) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content) 1fr max-content;
+        background-color: $color-grey-light-2;
+
+        &--selected-option {
+            background-color: $color-grey-dark-1;
+            border-left: 3px solid $color-primary;
+        }
+
+        &__title {
+            padding: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        &__all-results {
+            display: grid;
+            grid-template-columns: max-content 1fr max-content;
+            align-items: center;
+            grid-gap: 1rem;
+            padding: 1.5rem;
+        }
+
+        .all-process {
+            &__number {
+                font-size: 1.2rem;
+            }
+        }
+
+        .tag-filter {
+            &__title {
+                padding: 2.5rem 1.5rem;
+            }
+
+            &__item,
+            &__new-item {
+                display: grid;
+                grid-template-columns: 1.5rem 1fr max-content;
+                grid-gap: .5rem;
+                align-items: center;
+                padding: 1rem 1.5rem;
+                line-height: 1.9rem;
+            }
+
+            &__item {
+                transition: .6s;
+
+                &--not-selected {
+                    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-grey-dark-1 50%);
+                    background-size: 220%;
+                    font-family: $font-regular;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-position: 100%;
+                        
+                    }
+                }
+
+                &--selected {
+                    background-color: $color-grey-dark-1;
+                }
+            }
+
+            &__new-item {
+                font-family: $font-regular;
+                cursor: pointer;
+            }
+            
+            &__rectangle {
+                height: .5rem;
+            }
+        }
+
+        &__done {
+            padding: 1rem 2rem;
+            border-top: 1px solid $color-grey-dark-2;
+            
+        }
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+
+        .card-list {
+            padding: 2rem 3rem;
+            background-color: $color-grey-dark-1;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: 1.5fr max-content 1fr;
+            grid-gap: 3rem;
+            align-items: center;
+
+            &__general-information {
+                @include respond(lg) {
+                    grid-column: 1 / -1;
+                }
+            }
+
+            &__open-folder {
+                display: grid;
+                grid-template-columns: repeat(2, max-content);
+                grid-gap: 1rem;
+                align-items: center;
+                justify-content: center;
+                padding: 0 6rem;
+                border-left: 1px solid $color-grey-light-3;
+                border-right: 1px solid $color-grey-light-3;
+                cursor: pointer;
+                transition: .4s;
+
+                &:hover {
+                    background-color: $color-grey-dark-1;
+                }
+
+                @include respond(xl) {
+                    padding: 0 4rem;
+                }
+            }
+
+            &__tags {
+                display: flex;
+                align-items: center;
+            }
+
+            &__icon-wrapper {
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1rem;
+            }
+
+            &__tag-wrapper {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__tag {
+                max-width: 6rem;
+                width: 100%;
+                margin: .2rem;
+                padding: .2rem;
+                font-size: 1.2rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            @include respond(lg) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include respond(md) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .process-status {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-gap: 1rem;
+            font-family: $font-regular;
+            font-size: 1.2rem;
+
+            &__positive {
+                display: flex;
+                align-items: center;
+
+                [class*="icon-"] {
+                    margin-right: .3rem;
+                    color: $color-positive;
+                }
+
+                span:last-child {
+                    font-family: $font-semibold;
+                }
+            }
+
+            &__negative {
+                [class*="icon-"] {
+                    color: $color-negative;
+                }
+            }
+        }
+
+        .process-type {
+            &__category {
+                font-family: $font-regular;
+            }
+        }
+
+        .process-lower-info {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-gap: 1rem;
+            align-items: center;
+
+            &__process-number {
+                font-size: 1.2rem;
+            }
+
+            &__process-label-wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, max-content);
+                grid-gap: .5rem;
+            }
+
+            &__process-label {
+                padding: .1rem .5rem;
+                font-size: 1.2rem;
+                border-radius: 1rem;
+            }
+
+            @include respond(sm) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

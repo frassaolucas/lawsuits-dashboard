@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Segoe UI Regular;
+    src: url(/assets/Fonts/segoeuil_1.ttf);
+}
+
+@font-face {
+    font-family: Segoe UI Semibold;
+    src: url(/assets/Fonts/segoeui.ttf);
+}
+
+body {
+    font-family: $font-semibold;
+    line-height: 1.7;
+    color: $color-grey-dark-3;
+}
